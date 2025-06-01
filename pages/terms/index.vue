@@ -1,5 +1,5 @@
 <template>
 	<main>
-		Test
+		Terms
 	</main>
 </template>

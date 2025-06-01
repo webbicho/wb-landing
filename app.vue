@@ -4,6 +4,8 @@ import { pt_br } from '@nuxt/ui/locale';
 
 <template>
 	<UApp :locale="pt_br">
-		<NuxtPage />
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
 	</UApp>
 </template>
