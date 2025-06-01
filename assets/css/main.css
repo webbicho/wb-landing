@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+:disabled {
+  cursor: default;
+}
+
+@theme {
+	--font-sans: 'Public Sans', 'Inter', 'Helvetica', sans-serif;
+	--color-primary: #2FDB4A;
+}
