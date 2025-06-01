@@ -1,5 +1,6 @@
 <template>
-	<main>
-		Terms
-	</main>
+	<UIcon
+		name="i-lucide-lightbulb"
+		class="size-14"
+	/>
 </template>

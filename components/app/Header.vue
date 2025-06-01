@@ -24,10 +24,12 @@ const { t } = useI18n();
 					:label="t('header.access')"
 					variant="ghost"
 					class="font-bold"
+					size="xl"
 				/>
 				<UButton
 					:label="t('header.getStarted')"
 					class="font-bold"
+					size="xl"
 				/>
 			</div>
 		</div>
