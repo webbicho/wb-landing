@@ -1,7 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	compatibilityDate: '2025-05-15',
-	devtools: { enabled: true },
 	modules: [
 		'@nuxt/content',
 		'@nuxt/eslint',
@@ -9,12 +7,30 @@ export default defineNuxtConfig({
 		'@nuxt/icon',
 		'@nuxt/image',
 		'@nuxt/scripts',
-		'@nuxt/ui'
+		'@nuxt/ui',
+		'@nuxtjs/i18n'
 	],
+	devtools: { enabled: true },
+	css: ['~/assets/css/main.css'],
+	colorMode: {
+		preference: 'system',
+		fallback: 'light'
+	},
+	compatibilityDate: '2025-05-15',
 	eslint: {
-		checker: true,
 		config: {
 			stylistic: true
-	  }
+		}
+	},
+	i18n: {
+		locales: [
+			{
+				code: 'pt-BR',
+				name: 'Português - Brasil',
+				file: 'pt-BR.json'
+			}
+		],
+		defaultLocale: 'pt-BR',
+		detectBrowserLanguage: false
 	}
 });

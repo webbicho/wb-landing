@@ -6,7 +6,7 @@ export default withNuxt({
       projectService: true,
     },
   },
-  files: ['**/*.vue', '**/*.ts', '**/*.tsx', '**/*.mjs'],
+  files: ['**/*.vue', '**/*.ts', '**/*.tsx'],
   rules: {
     'no-console': 'warn',
     'quotes': ['warn', 'single'],
@@ -14,14 +14,15 @@ export default withNuxt({
     'array-element-newline': ['warn', { multiline: true, minItems: 4 }],
     'function-paren-newline': ['warn', 'multiline-arguments'],
     'newline-per-chained-call': ['warn', { ignoreChainWithDepth: 3 }],
-    'semi': ['warn', 'always'],
-    'comma-dangle': ['warn', 'never'],
+    '@stylistic/semi': ['warn', 'always'],
+    '@stylistic/comma-dangle': ['warn', 'never'],
+    '@stylistic/no-tabs': 'off',
+    '@stylistic/indent': ['warn', 'tab'],
     // @typescript-eslint
     '@typescript-eslint/no-unused-vars': 'warn',
     '@typescript-eslint/prefer-readonly': 'warn',
     '@typescript-eslint/explicit-function-return-type': 'warn',
-    // Indent TS and Vue
-    'indent': ['warn', 'tab'],
+    // Vue
     'vue/html-indent': ['warn', 'tab'],
     'vue/script-indent': ['warn', 'tab'],
   },
