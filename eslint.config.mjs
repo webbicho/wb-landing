@@ -25,5 +25,9 @@ export default withNuxt({
     // Vue
     'vue/html-indent': ['warn', 'tab'],
     'vue/script-indent': ['warn', 'tab'],
+    'vue/max-attributes-per-line': ['warn', {
+      singleline: 1,
+      multiline: 1,
+    }],
   },
 })

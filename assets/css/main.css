@@ -3,14 +3,18 @@
 
 button,
 [role="button"] {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 :disabled {
-  cursor: default;
+	cursor: default;
 }
 
 @theme {
 	--font-sans: 'Public Sans', 'Inter', 'Helvetica', sans-serif;
 	--color-primary: #2FDB4A;
+}
+
+.wb-container {
+	max-width: 1024px;
 }
